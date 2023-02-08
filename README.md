@@ -76,3 +76,32 @@ The DRO Setup comes with a default connector installed on the VM where the insta
 ``` sudo sh connector_install.sh ```
 
 4. In the DRO UI, Click on the Settings button on the top right > Manage Connectors and Add the new connector to start using it.
+
+
+## Verify Package
+
+1. Download the installation package on the designated virtual machine:
+   
+``` git clone https://github.com/NetApp-Automation/DRO.git ```
+
+2. Unzip the package and navigate into the unziped folder:
+   
+``` cd DRO ```
+
+``` tar -xf signature.tar```
+
+``` cd DRO-signature ```
+
+3. Extract the public key from the pem file using below command:
+
+``` openssl x509 -pubkey -noout -in csc-prod-SIE-DRO.pem > SIE-DRO-public.pub ```
+
+4. Verify each tar file using the public key generated in the previous step:
+
+``` openssl dgst -sha256 -verify SIE-DRO-public.pub -signature DRO-prereq.tar.sig ../DRO-prereq.tar ```
+
+``` openssl dgst -sha256 -verify SIE-DRO-public.pub -signature additional-connector-installation.tar.sig ../additional-connector-installation.tar ```
+
+5. To verify the code signing certificate against the chain certificate:
+
+``` openssl verify -CAfile csc-prod-chain-SIE-DRO.pem csc-prod-SIE-DRO.pem ```
