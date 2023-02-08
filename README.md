@@ -16,6 +16,7 @@ Please refer to https://docs.netapp.com/us-en/netapp-solutions/ehc/dro/dro-overv
   - docker
   - docker-compose
   - jq
+  - openssl
 -	Connectivity to SRC and DST site vCenter and Storage systems
 -	DNS resolution in place if using DNS names in place of IPs for vCenter/Storage systems
 -	User with root permissions
