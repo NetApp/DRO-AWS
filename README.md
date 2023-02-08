@@ -31,13 +31,14 @@ Please refer to https://docs.netapp.com/us-en/netapp-solutions/ehc/dro/dro-overv
 2. Unzip the package and navigate into the unziped folder:
 
 ``` tar -xf DRO-prereq.tar ```
+
 ``` cd dro_package ```
 
-1. Run the deployment script and enter your host IP (for example: 10.10.10.10):
+3. Run the deployment script and enter your host IP (for example: 10.10.10.10):
 
 ``` sudo sh deploy.sh ```
 
-3. Once the script runs successfully, access the UI using below credentials:
+4. Once the script runs successfully, access the UI using below credentials:
 
 **Username:** admin
 **Password:** admin
