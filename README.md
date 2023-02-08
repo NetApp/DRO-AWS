@@ -30,6 +30,8 @@ Please refer to https://docs.netapp.com/us-en/netapp-solutions/ehc/dro/dro-overv
 
 2. Unzip the package and navigate into the unziped folder:
 
+``` cd DRO ```
+
 ``` tar -xf DRO-prereq.tar ```
 
 ``` cd dro_package ```
