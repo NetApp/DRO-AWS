@@ -20,7 +20,7 @@ Please refer to https://docs.netapp.com/us-en/netapp-solutions/ehc/dro/dro-overv
 -	DNS resolution in place if using DNS names in place of IPs for vCenter/Storage systems
 -	User with root permissions
 
-**Note:** Recommended host OS: Ubuntu 20.04
+**Note:** Recommended host OS: Ubuntu 20.04 (2 CPU and 4GB Memory)
 
 ## Installation Steps
 
@@ -54,3 +54,25 @@ Please refer to https://docs.netapp.com/us-en/netapp-solutions/ehc/dro/dro-overv
 2. If you encounter any issue post installation, please run the troubleshoot script and reach out to support from the UI.
 
     ``` sudo sh troubleshoot.sh ```
+
+## Additional Connector Deployment Steps
+
+The DRO Setup comes with a default connector installed on the VM where the installation script is run. In case you want to install an additional connector on a separate VM, follow the below steps on the VM where you want to deploy the connector:
+
+1. Download the installation package on the designated virtual machine:
+   
+``` git clone https://github.com/NetApp-Automation/DRO.git ```
+
+2. Unzip the package and navigate into the unziped folder:
+   
+``` cd DRO ```
+
+``` tar -xf DRO-prereq.tar ```
+
+``` cd dro_package ```
+
+3. Run the deployment script and enter your host IP (for example: 10.10.10.10):
+
+``` sudo sh connector_install.sh ```
+
+4. In the DRO UI, Click on the Settings button on the top right > Manage Connectors and Add the new connector to start using it.
