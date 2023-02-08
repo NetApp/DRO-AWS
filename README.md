@@ -67,7 +67,7 @@ The DRO Setup comes with a default connector installed on the VM where the insta
    
 ``` cd DRO ```
 
-``` tar -xf DRO-prereq.tar ```
+``` tar -xf additional-connector-installation.tar ```
 
 ``` cd dro_package ```
 
