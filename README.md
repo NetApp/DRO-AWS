@@ -6,7 +6,7 @@ DRO leverages NetApp's SnapMirror replication-based approach for a powerful and 
 
 ## Documentation
 
-Please refer to https://docs.netapp.com/us-en/netapp-solutions/ehc/dro/dro-overview.html for the official documentation.
+Please refer to https://docs.netapp.com/us-en/netapp-solutions/ehc/dro/aws-dro-overview.html for the official documentation.
 
 # DRO Installation Steps
 
@@ -33,13 +33,13 @@ Please refer to https://docs.netapp.com/us-en/netapp-solutions/ehc/dro/dro-overv
 
 ``` cd DRO ```
 
-``` tar -xf DRO-prereq.tar ```
+``` tar -xf DRO-aws-prereq.tar ```
 
 ``` cd dro_package ```
 
 3. Run the deployment script and enter your host IP (for example: 10.10.10.10):
 
-``` sudo sh deploy.sh ```
+``` sudo sh deploy_aws.sh ```
 
 4. Once the script runs successfully, access the UI using below credentials:
 
@@ -99,7 +99,7 @@ The DRO Setup comes with a default connector installed on the VM where the insta
 
 4. Verify each tar file using the public key generated in the previous step:
 
-``` openssl dgst -sha256 -verify SIE-DRO-public.pub -signature DRO-prereq.tar.sig ../DRO-prereq.tar ```
+``` openssl dgst -sha256 -verify SIE-DRO-public.pub -signature DRO-aws-prereq.tar.sig ../DRO-aws-prereq.tar ```
 
 ``` openssl dgst -sha256 -verify SIE-DRO-public.pub -signature additional-connector-installation.tar.sig ../additional-connector-installation.tar ```
 
