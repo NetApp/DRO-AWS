@@ -33,7 +33,7 @@ Please refer to https://docs.netapp.com/us-en/netapp-solutions/ehc/dro/aws-dro-o
 
 ``` cd DRO ```
 
-``` tar -xf DRO-aws-prereq.tar ```
+``` tar -xf DRO-prereq.tar ```
 
 ``` cd dro_package ```
 
