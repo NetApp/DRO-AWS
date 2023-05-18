@@ -27,7 +27,7 @@ Please refer to https://docs.netapp.com/us-en/netapp-solutions/ehc/dro/aws-dro-o
 
 1. Download the installation package on the designated virtual machine:
 
-``` git clone https://github.com/NetApp-Automation/DRO.git ```
+``` git clone https://github.com/NetApp-Automation/DRO-AWS.git ```
 
 2. Unzip the package and navigate into the unziped folder:
 
@@ -62,7 +62,7 @@ The DRO Setup comes with a default connector installed on the VM where the insta
 
 1. Download the installation package on the designated virtual machine:
    
-``` git clone https://github.com/NetApp-Automation/DRO.git ```
+``` git clone https://github.com/NetApp-Automation/DRO-AWS.git ```
 
 2. Unzip the package and navigate into the unziped folder:
    
@@ -83,7 +83,7 @@ The DRO Setup comes with a default connector installed on the VM where the insta
 
 1. Download the installation package on the designated virtual machine:
    
-``` git clone https://github.com/NetApp-Automation/DRO.git ```
+``` git clone https://github.com/NetApp-Automation/DRO-AWS.git ```
 
 2. Unzip the package and navigate into the unziped folder:
    
@@ -106,3 +106,8 @@ The DRO Setup comes with a default connector installed on the VM where the insta
 5. To verify the code signing certificate against the chain certificate:
 
 ``` openssl verify -CAfile csc-prod-chain-SIE-DRO.pem csc-prod-SIE-DRO.pem ```
+
+
+## Points to Note
+
+1. During Teardown operation if the cloned volume doesn't get deleted, users can attempt to delete it manually from the AWS FSxN console.
