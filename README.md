@@ -31,7 +31,7 @@ Please refer to https://docs.netapp.com/us-en/netapp-solutions/ehc/dro/aws-dro-o
 
 2. Unzip the package and navigate into the unziped folder:
 
-``` cd DRO ```
+``` cd DRO-AWS ```
 
 ``` tar -xf DRO-prereq.tar ```
 
@@ -66,7 +66,7 @@ The DRO Setup comes with a default connector installed on the VM where the insta
 
 2. Unzip the package and navigate into the unziped folder:
    
-``` cd DRO ```
+``` cd DRO-AWS ```
 
 ``` tar -xf additional-connector-installation.tar ```
 
@@ -87,7 +87,7 @@ The DRO Setup comes with a default connector installed on the VM where the insta
 
 2. Unzip the package and navigate into the unziped folder:
    
-``` cd DRO ```
+``` cd DRO-AWS ```
 
 ``` tar -xf signature.tar```
 
