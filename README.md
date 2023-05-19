@@ -46,6 +46,29 @@ Please refer to https://docs.netapp.com/us-en/netapp-solutions/ehc/dro/aws-dro-o
 **Username:** admin
 **Password:** admin
 
+## Minor Version Updates
+
+1. Download the installation package on the designated virtual machine:
+
+``` git clone https://github.com/NetApp-Automation/DRO-AWS.git ```
+
+2. Unzip the package and navigate into the unziped folder:
+
+``` cd DRO-AWS ```
+
+``` tar -xf DRO-prereq.tar ```
+
+``` cd dro_package ```
+
+3. Run the deployment script and enter your host IP (for example: 10.10.10.10):
+
+``` sudo sh update_aws.sh ```
+
+4. Once the script runs successfully, access the UI using below credentials:
+
+**Username:** admin
+**Password:** admin
+
 ## Troubleshooting Steps
 
 1. If you encounter an error during initial installation, run the uninstallation script before retrying the installation again to cleanup any residual data. 
