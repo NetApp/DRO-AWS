@@ -60,7 +60,7 @@ Please refer to https://docs.netapp.com/us-en/netapp-solutions/ehc/dro/aws-dro-o
 
 ``` cd dro_package ```
 
-3. Run the deployment script and enter your host IP (for example: 10.10.10.10):
+3. Run the update script and enter your host IP (for example: 10.10.10.10):
 
 ``` sudo sh update_aws.sh ```
 
