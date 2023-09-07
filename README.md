@@ -27,7 +27,7 @@ Please refer to https://docs.netapp.com/us-en/netapp-solutions/ehc/dro/aws-dro-o
 
 1. Download the installation package on the designated virtual machine:
 
-``` git clone https://github.com/NetApp-Automation/DRO-AWS.git ```
+``` git clone https://github.com/NetApp/DRO-AWS.git ```
 
 2. Unzip the package and navigate into the unziped folder:
 
@@ -50,7 +50,7 @@ Please refer to https://docs.netapp.com/us-en/netapp-solutions/ehc/dro/aws-dro-o
 
 1. Download the installation package on the designated virtual machine:
 
-``` git clone https://github.com/NetApp-Automation/DRO-AWS.git ```
+``` git clone https://github.com/NetApp/DRO-AWS.git ```
 
 2. Unzip the package and navigate into the unziped folder:
 
@@ -85,7 +85,7 @@ The DRO Setup comes with a default connector installed on the VM where the insta
 
 1. Download the installation package on the designated virtual machine:
    
-``` git clone https://github.com/NetApp-Automation/DRO-AWS.git ```
+``` git clone https://github.com/NetApp/DRO-AWS.git ```
 
 2. Unzip the package and navigate into the unziped folder:
    
@@ -106,7 +106,7 @@ The DRO Setup comes with a default connector installed on the VM where the insta
 
 1. Download the installation package on the designated virtual machine:
    
-``` git clone https://github.com/NetApp-Automation/DRO-AWS.git ```
+``` git clone https://github.com/NetApp/DRO-AWS.git ```
 
 2. Unzip the package and navigate into the unziped folder:
    
