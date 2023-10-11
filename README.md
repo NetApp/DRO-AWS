@@ -134,3 +134,6 @@ The DRO Setup comes with a default connector installed on the VM where the insta
 ## Points to Note
 
 1. During Teardown operation if the cloned volume doesn't get deleted, users can attempt to delete it manually from the AWS FSxN console.
+2. Under Resource Groups Replication plan section, ignore the fields start time, Retry count and Total snapshots.
+3. Static IP scenario does not support for Migration workflow.
+4. Compatibility with ONTAP versions 9.11.1 and later.
